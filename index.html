@@ -1,167 +1,153 @@
 <!DOCTYPE html>
 <html lang="it">
-  <!-- Dichiarazione del tipo di documento HTML e lingua -->
-  <head>
-    <!-- Metadati richiesti -->
-    <meta charset="utf-8">
-    <!-- Impostazioni per la compatibilità con dispositivi mobili -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Descrizione del sito web per i motori di ricerca -->
-    <meta name="description" content="Portfolio Nicolò Dellagaren">
-    <!-- Inclusione di Bootstrap CSS per lo stile e la reattività del sito -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <!-- Inclusione del CSS di Swiper per la galleria a scorrimento -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-    <!-- Inclusione di Google Fonts per lo stile dei testi -->
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nothing+You+Could+Do&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
-    <!-- Inclusione di Font Awesome per le icone -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-    <!-- Collegamento al foglio di stile personalizzato -->
-    <link href="style.css" rel="stylesheet">
-    <!-- Script per Bootstrap (caricato localmente) -->
-    <script src="/path/to/cdn/bootstrap.min.js"></script>
-    <!-- Titolo della pagina web -->
-    <title>Dellagaren Nicolò</title>
-  </head>
-
-  <body>
-    <!-- Navigazione principale del sito -->
-    <nav class="navbar">
-      <div class="container">
-        <div class="logo">Nicolò Dellagaren
-          <span id="baby-log">Graphic Designer</span>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio Nicolò">
+    <meta name="keywords" content="portfolio grafico, graphic design">
+    <meta name="author" content="Dellagaren Nicolò">
+    <title>Portfolio di Dellagaren Nicolò</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Aggiungi link per Swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+</head>
+<body>
+    <!-- SEZIONE HEADER -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="#">
+                    <img src="immagini/Logo mio bianco.png" height="50">
+                </a>
+                <ul class="nav-menu">
+                    <li><a href="#about">Chi Sono</a></li>
+                    <li><a href="#services">Servizi</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contatti</a></li>
+                </ul>
+            </nav>
         </div>
+    </header>
 
-        <!-- Menu di navigazione -->
-        <ul class="menu">
-          <li><a href="#progetti">Progetti</a></li>
-          <li><a href="#studio">Chi Sono</a></li>
-          <li><a href="#metodo">La Passione</a></li>
-          <li><a href="#numeri">Contatti</a></li>
-        </ul>
-        <!-- Menu burger per dispositivi mobili -->
-        <div class="burger-menu">&#9776;</div>
-      </div>
-    </nav>
-
-    <!-- Carousel per immagini in evidenza -->
-    <div id="carouselExampleFade" class="carousel slide carousel-fade carousel-vertical" style="opacity:0.9;">
-      <div class="carousel-inner" style="max-height: 700px;">
-        <div class="carousel-item active">
-          <img src="foto/Ap1.jpeg" class="d-block w-100" alt="foto 1 AP" style="background-size: cover; margin-top: -5%;">
-          <div class="carousel-caption d-none d-md-block">
-            <h5 style="margin-bottom: 0%; color: rgb(255, 255, 255); font-size: 40px; font-family: Bebas Neue; text-align: left; width: 200px; margin-left: -70px;">Design Studio</h5>
-            <p style="margin-bottom: 25%; text-align: left; width: 200px; margin-left: -70px; text-shadow: 2px 2px 2px black;">Il mio approccio è simile a quello di un sarto che crea un vestito su misura per il suo cliente.</p>
-          </div>
+    <!-- SEZIONE HERO -->
+    <section id="hero" class="hero">
+        <div class="container">
+            <h1>Benvenuto nel mio portfolio</h1>
+            <p>Visualizza i miei lavori più recenti e scopri come posso aiutarti a realizzare il tuo prossimo progetto.</p>
+            <a href="#portfolio" class="btn">Visualizza Portfolio</a>
         </div>
-        <!-- Altri elementi del carosello -->
-        <!-- Controlli per navigare nel carosello -->
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span> 
-        </button>
-      </div>
-    </div>
+    </section>
 
-    <!-- Sezione Progetti -->
-    <div class="content" id="progetti" style="text-align: center; margin-bottom: 10px; font-family: Bebas Neue; font-size: 50px;">
-      Progetti
-    </div>
-    <p id="picpr" style="max-width: 800px; font-size: 16px; text-align: center; margin: auto; margin-bottom: 20px;">Rileviamo le misure della vostra casa, sviluppiamo un concept, creazione di bozzetti, progettazione in formato 2D e 3D, selezione di materiali e colori, nonché del raffinamento dei dettagli.</p>
-
-    <!-- Galleria di progetti con Swiper -->
-    <div class="row row-cols-1 row-cols-md-3 g-4" style="margin-right: 30px; margin-left: 30px;">
-      <div class="col">
-        <div class="card h-100">
-          <div class="swiper mySwiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <img src="foto/Ap3.jpeg" class="card-img-top" alt="..." style="height: 260px;">
-              </div>
-              <!-- Altre immagini del progetto -->
-            </div>              
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>            
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">Interior Design</h5>
-          </div>
+    <!-- SEZIONE CHI SONO -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-description">
+                    <h2>Chi Sono</h2>
+                    <p>Ho studiato presso il Liceo Artistico Benedetto Alfieri... competenze artistiche e tecniche nel campo del design.</p>
+                </div>
+                <div class="about-image">
+                    <img src="immagini/miafoto.png" height="450">
+                </div>
+            </div>
         </div>
-      </div>
-      <!-- Altre colonne per diversi tipi di design -->
-    </div>
+    </section>
 
-    <!-- Sezione Studio -->
-    <div id="studio" style="text-align: center; margin-top: 50px; margin-bottom: 10px; font-family: Bebas Neue; font-size: 50px;">
-      Studio
-    </div>
-
-    <!-- Carta con immagine e descrizione -->
-    <div class="card mb-3 mx-auto" style="max-width: 740px;">
-      <div class="row g-0">
-        <div class="col-md-6">
-          <img src="foto/Ap10.JPG" class="img-fluid rounded-start" id="imst" style="height: 300px;" alt="...">
+    <!-- SEZIONE SERVIZI -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Servizi</h2>
+            <div class="service">
+                <h3>Sviluppo Web</h3>
+                <p>Offro servizi di sviluppo web su misura...</p>
+            </div>
+            <div class="service">
+                <h3>Web Design</h3>
+                <p>Crea design moderni e intuitivi...</p>
+            </div>
+            <div class="service">
+                <h3>SEO Ottimizzazione</h3>
+                <p>Implemento strategie SEO efficaci...</p>
+            </div>
         </div>
-        <div class="col-md-6">
-          <div class="card-body" style="margin-left: -100px;">
-            <h5 class="card-title" id="chis">Chi sono</h5>
-            <p class="card-text" id="ami">Sono una Junior Designer, ho la passione per la progettazione, il disegno e la creatività. Amo lavorare a stretto contatto con i miei clienti, guidandoli attraverso il processo di selezione di elementi, arredi e materiali. Creo progetti che vadano oltre il semplice estetico, considerando anche la funzionalità e il comfort. Premurosa, attenta ai dettagli, capace di ascoltare e di prendermi cura degli spazi come delle persone che li vivono.</p>
-          </div>
+    </section>
+
+    <!-- SEZIONE PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2>Portfolio</h2>
+            <p>Qui troverai una selezione dei miei progetti più recenti...</p>
+            <div class="areaslider">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="immagini/2d/sovrapposizione.png" loading="lazy"></div>
+                        <div class="swiper-slide"><img src="immagini/2d/etichetta.png" loading="lazy"></div>
+                        <div class="swiper-slide"><img src="immagini/2d/haloposter.png" loading="lazy"></div>
+                        <div class="swiper-slide"><img src="immagini/2d/ia.jpg" loading="lazy"></div>
+                        <div class="swiper-slide"><img src="immagini/2d/stickergundam.png" loading="lazy"></div>
+                        <div class="swiper-slide"><img src="immagini/2d/vino-fronte.png" loading="lazy"></div>
+                        <div class="swiper-slide"><img src="immagini/2d/zplusposter.png" loading="lazy"></div>
+                        <div class="swiper-slide"><img src="immagini/2d/beermuda.png" loading="lazy"></div>
+                        <div class="swiper-slide"><img src="immagini/2d/starwars.png" loading="lazy"></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
+    </section>
 
-    <!-- Sezione Metodo -->
-    <div id="metodo" style="text-align: center; margin-top: 50px; margin-bottom: 10px; font-family: Bebas Neue; font-size: 50px;">
-      Metodo
-    </div>
-    <p style="max-width: 800px; font-size: 16px; text-align: center; margin: auto; margin-bottom: 20px;">Ogni progetto che affronto è un'opportunità unica per creare uno spazio che rispecchi appieno la visione e lo stile di chi vi abita. La mia passione sta nel trasformare case, in case veramente personalizzate, dove ogni dettaglio è curato con attenzione e amore.</p>
-
-    <!-- Sezione di confronto visivo con divisore regolabile -->
-    <div id="comparison" style="margin:auto; text-align: center;">
-      <figure>
-        <div id="divisor"></div>
-      </figure>
-      <input type="range" min="0" max="100" value="50" id="slider" oninput="moveDivisor()">
-    </div>
-
-    <!-- Sezione Contatti -->
-    <div class="mx-auto">
-      <div class="container mx-auto" style="max-width: 800px;">
-        <div class="row justify-content-lg-center-md-center-sm-center">
-          <div id="numeri" style="text-align: center; margin-top: 50px; margin-bottom: 10px; font-family: Bebas Neue; font-size: 50px;">
-            Contatti
-          </div>
-          <p style="text-align: center;">Ecco i miei contatti principali:</p>
-          <div class="col-sm-4 text-center">
-            <i class="fa fa-instagram" aria-hidden="true"></i> @AriannaPolla
-          </div>
-          <div class="col-sm-4 text-center">
-            <i class="fa fa-envelope" aria-hidden="true"></i> aripolla@polidesign.com
-          </div>
-          <div class="col-sm-4 text-center">
-            <i class="fa fa-phone" aria-hidden="true"></i> 3345679832
-          </div>
+    <!-- SEZIONE CONTATTI -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contatti</h2>
+            <p>Se desideri collaborare con me o hai delle domande...</p>
+            <form action="process.php" method="POST">
+                <div class="form-group">
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Messaggio:</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+            </form>
         </div>
-      </div>
-    </div>
+    </section>
 
-    <!-- Footer con informazioni di copyright -->
-    <footer id="footer" style="margin-bottom: 20px;">
-      <div class="row text-center">
-        <p>&copy; 2023 Arianna Polla. Tutti i diritti riservati.</p>
-      </div>
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="social-icons mt-4">
+                <a href="https://www.instagram.com/graphicnicod/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/nicol%C3%B2-dellagaren-42b52b2a9/?originalSubdomain=it/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
     </footer>
 
-    <!-- Inclusione di Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qmFZ5v+ELpHc4LHeoG+nAA4y7lNN/As8v7saepx5povkCvdS+RSG+kEpTdr8kmWZ" crossorigin="anonymous"></script>
-    <!-- Inclusione di Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <!-- Script personalizzati -->
-    <script src="script.js"></script>
-  </body>
+    <!-- Aggiungi i link per Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+</body>
 </html>
+
+    

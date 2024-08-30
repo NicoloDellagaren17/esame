@@ -1,0 +1,239 @@
+/* Impostazioni di stile globali che assicurano che tutti gli elementi considerino il padding e il border nei calcoli di larghezza e altezza, e rimuovono margini e padding predefiniti */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Stile generale del corpo del sito: font, colori di sfondo e testo, e altezza della linea */
+body {
+    font-family: 'Apotek wide', sans-serif; /* Font principale */
+    background-color: #f4f4f4; /* Colore di sfondo */
+    color: #333; /* Colore del testo */
+    line-height: 1.6; /* Altezza della linea per una migliore leggibilità */
+}
+
+/* Contenitore centrale che limita la larghezza massima della pagina e aggiunge margini */
+.container {
+    max-width: 1200px;
+    margin: 0 auto; /* Centra il contenitore */
+    padding: 0 20px; /* Padding per evitare che il contenuto tocchi i bordi */
+}
+
+/* Stile per l'intestazione: colore, padding, posizione fissa e larghezza */
+.header {
+    background-color: #333; /* Colore di sfondo dell'intestazione */
+    color: #fff; /* Colore del testo */
+    padding: 20px 0; /* Padding verticale */
+    position: fixed; /* Posizione fissa in cima alla pagina */
+    width: 100%; /* Larghezza completa */
+    top: 0; /* Ancorata al top della pagina */
+    z-index: 1000; /* Priorità alta per sovrapporre altri elementi */
+}
+
+/* Stile del contenuto della navbar: disposizione degli elementi centrata */
+.header .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Distribuisce gli elementi su tutta la larghezza */
+}
+
+/* Stile per il logo nell'intestazione */
+.header .logo {
+    font-size: 24px; /* Dimensione del testo */
+    font-weight: bold; /* Testo in grassetto */
+    text-decoration: none; /* Rimuove la sottolineatura */
+    color: #ffd700; /* Colore del logo */
+}
+
+/* Stile per il menu di navigazione nell'intestazione */
+.header .nav-menu {
+    list-style: none; /* Rimuove i punti elenco */
+    display: flex; /* Disposizione degli elementi in riga */
+}
+
+/* Stile per ciascun elemento del menu */
+.header .nav-menu li {
+    margin-right: 20px; /* Spaziatura tra gli elementi del menu */
+}
+
+/* Stile per i link nel menu di navigazione */
+.header .nav-menu li a {
+    text-decoration: none; /* Rimuove la sottolineatura */
+    color: #fff; /* Colore del testo */
+    transition: color 0.3s ease; /* Transizione morbida al passaggio del mouse */
+}
+
+/* Colore di hover per i link del menu */
+.header .nav-menu li a:hover {
+    color: #ffd700; /* Colore quando il mouse passa sopra */
+}
+
+/* Sezione eroica, con un'immagine di sfondo e testo centrato */
+.hero {
+    background-image: url('immagini/SFONDO.jpg'); /* Percorso dell'immagine di sfondo */
+    background-size: cover; /* L'immagine copre l'intera area */
+    background-position: center; /* Centra l'immagine */
+    color: #00000; /* Colore del testo */
+    height: 100vh; /* Altezza dell'intera schermata */
+    display: flex; /* Centra il contenuto sia verticalmente che orizzontalmente */
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 20px; /* Padding orizzontale */
+}
+
+/* Stile per l'header dell'eroe */
+.hero h1 {
+    font-size: 48px; /* Dimensione del testo */
+    margin-bottom: 20px; /* Spaziatura sotto il titolo */
+    text-transform: uppercase; /* Testo in maiuscolo */
+}
+
+/* Stile per i paragrafi nell'eroe */
+.hero p {
+    font-size: 24px; /* Dimensione del testo */
+    margin-bottom: 30px; /* Spaziatura sotto il paragrafo */
+}
+
+/* Stile per i pulsanti */
+.btn {
+    display: inline-block;
+    background-color: #ffd700; /* Colore di sfondo del pulsante */
+    color: #333; /* Colore del testo */
+    padding: 15px 30px; /* Padding interno */
+    text-decoration: none; /* Rimuove la sottolineatura */
+    border-radius: 5px; /* Angoli arrotondati */
+    transition: background-color 0.3s ease; /* Transizione per il colore di sfondo */
+}
+
+/* Colore di sfondo del pulsante al passaggio del mouse */
+.btn:hover {
+    background-color: #ffcc00; /* Cambia colore al passaggio del mouse */
+}
+
+/* Sezioni principali del sito: impostazione del padding e dell'allineamento del testo */
+.about,
+.services,
+.portfolio,
+.contact {
+    padding: 100px 0; /* Spaziatura sopra e sotto la sezione */
+    text-align: center; /* Testo centrato */
+}
+
+/* Stile per il contenuto della sezione "About" */
+.about .about-content {
+    display: flex;
+    align-items: center; /* Allineamento verticale degli elementi */
+    justify-content: space-between; /* Spaziatura uniforme tra gli elementi */
+    flex-wrap: wrap; /* Permette agli elementi di andare a capo */
+}
+
+/* Stile per la descrizione e l'immagine della sezione "About" */
+.about .about-description,
+.about .about-image {
+    flex: 1; /* Ogni elemento prende una porzione uguale di spazio */
+    margin: 10px; /* Spaziatura intorno agli elementi */
+}
+
+/* Stile per l'immagine del profilo */
+.about .profile-image {
+    max-width: 100%; /* L'immagine non supera la larghezza del contenitore */
+    border-radius: 10px; /* Angoli arrotondati per l'immagine */
+}
+
+/* Stile per i servizi offerti */
+.services .service {
+    background-color: #fff; /* Colore di sfondo */
+    padding: 20px; /* Padding interno */
+    margin: 10px 0; /* Spaziatura sopra e sotto */
+    border-radius: 10px; /* Angoli arrotondati */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Ombra per aggiungere profondità */
+}
+
+/* Stile per i progetti nel portfolio */
+.portfolio .project {
+    margin: 20px 0; /* Spaziatura sopra e sotto il progetto */
+}
+
+/* Stile per l'area dello slider */
+areaslider {
+    margin: 0 10rem; /* Spaziatura orizzontale */
+    margin-top: 15px; /* Spaziatura superiore */
+    width: 85%; /* Larghezza dello slider */
+}
+
+/* Stile per il contenitore dello slider Swiper */
+.swiper {
+    height: 80vh; /* Altezza dello slider */
+}
+
+/* Stile per le singole slide */
+.swiper-slide {
+    text-align: center; /* Testo centrato */
+    font-size: 18px; /* Dimensione del testo */
+    display: flex; /* Allineamento flessibile */
+    justify-content: center;
+    align-items: center;
+}
+
+/* Stile per le immagini all'interno delle slide */
+.swiper-slide img {
+    max-height: 80vh; /* Altezza massima dell'immagine */
+    max-width: 80%; /* Larghezza massima dell'immagine */
+    justify-content: center;
+    align-items: center;
+}
+
+/* Centratura dello slider Swiper */
+.swiper {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Posizione e stile della paginazione dello slider */
+.swiper-pagination {
+    position: absolute;
+    bottom: 10px; /* Posizione in basso */
+    left: 50%; /* Centratura orizzontale */
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10; /* Priorità alta */
+}
+
+/* Stile per i bullet della paginazione */
+.swiper-pagination-bullet {
+    background: var(--main-color); /* Colore principale */
+    width: 10px;
+    height: 10px;
+    border-radius: 50%; /* Bullet circolari */
+    margin: 0 4px; /* Spaziatura tra i bullet */
+}
+
+/* Stile per il bullet attivo */
+.swiper-pagination-bullet-active {
+    background: var(--title-color); /* Colore del titolo */
+}
+
+/* Stile per i pulsanti di navigazione dello slider */
+.swiper-button-next, 
+.swiper-button-prev {
+    /* Stile personalizzabile per i pulsanti di navigazione */
+}
+
+/* Stile per la navigazione dello slider */
+.navigation {
+    position: absolute;
+    width: 100%;
+    bottom: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Stile per i singoli indicatori di navigazione */
+.nav {
+    cursor: pointer;
+    height: 15px;
+    width: 

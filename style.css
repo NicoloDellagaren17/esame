@@ -71,9 +71,8 @@ body {
 
 /* Header di presentazione */
 .hero {
-    height: 3
-        600px;
-    background-image: url('path/to/your-background.jpg');
+    height: 600px;
+    background-image: url('path/to/your-background.jpg'); /* Assicurati che il percorso sia corretto */
     background-size: cover;
     background-position: center;
     display: flex;
@@ -83,6 +82,7 @@ body {
     text-align: center;
     position: relative;
     background-attachment: fixed; /* Parallax effect */
+    margin-bottom: 80px; /* Spazio tra l'header e la sezione successiva */
 }
 
 .hero-text {
@@ -112,13 +112,14 @@ body {
 
 /* Sezione Chi Sono */
 .about {
-    padding: 20px;
+    padding: 40px 20px; /* Aggiungi più padding per maggiore spazio interno */
     display: flex;
     align-items: center;
     justify-content: space-between;
     opacity: 0;
     transform: translateY(50px);
     transition: opacity 0.6s ease-in-out, transform 0.6s ease-in-out;
+    margin-bottom: 80px; /* Spazio tra Chi Sono e la sezione successiva */
 }
 
 .about.visible {
@@ -139,10 +140,11 @@ body {
 
 /* Sezione Servizi */
 .services {
-    padding: 20px;
+    padding: 40px 20px; /* Aggiungi più padding per maggiore spazio interno */
     opacity: 0;
     transform: translateY(50px);
     transition: opacity 0.6s ease-in-out, transform 0.6s ease-in-out;
+    margin-bottom: 80px; /* Spazio tra Servizi e la sezione successiva */
 }
 
 .services.visible {
@@ -178,8 +180,9 @@ body {
 
 /* Sezione Portfolio */
 .portfolio {
-    padding: 20px;
+    padding: 40px 20px; /* Aggiungi più padding per maggiore spazio interno */
     position: relative;
+    margin-bottom: 80px; /* Spazio tra Portfolio e la sezione successiva */
 }
 
 .slider {
@@ -233,10 +236,11 @@ body {
 
 /* Sezione Contatti */
 .contact {
-    padding: 20px;
+    padding: 40px 20px; /* Aggiungi più padding per maggiore spazio interno */
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 80px; /* Spazio tra Contatti e il footer */
 }
 
 .contact h2 {
@@ -283,7 +287,7 @@ form button {
 footer {
     background-color: #000;
     color: #fff;
-    padding: 10px;
+    padding: 20px;
     text-align: center;
 }
 

@@ -71,7 +71,8 @@ body {
 
 /* Header di presentazione */
 .hero {
-    height: 300px;
+    height: 3
+        600px;
     background-image: url('path/to/your-background.jpg');
     background-size: cover;
     background-position: center;

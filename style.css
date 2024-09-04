@@ -185,6 +185,7 @@ body {
     margin-bottom: 80px; /* Spazio tra Portfolio e la sezione successiva */
 }
 
+/* Slider */
 .slider {
     position: relative;
     overflow: hidden;
@@ -195,24 +196,31 @@ body {
     transition: transform 0.5s ease-in-out;
 }
 
+/* Ogni slide del slider */
 .slide {
     min-width: 100%;
     box-sizing: border-box;
+    display: flex;
+    justify-content: center; /* Centra le immagini all'interno dello slide */
 }
 
+/* Immagini del Portfolio */
 .portfolio-img {
     width: 100%;
-    height: auto;
-    display: block;
+    height: auto; /* Mantiene le proporzioni dell'immagine */
+    max-height: 500px; /* Limita l'altezza massima per evitare immagini troppo alte */
+    object-fit: cover; /* Adatta l'immagine al contenitore */
     border-radius: 8px;
     cursor: pointer;
     transition: transform 0.3s;
 }
 
+/* Effetto hover per le immagini del portfolio */
 .portfolio-img:hover {
     transform: scale(1.05);
 }
 
+/* Controlli dello slider (precedente e successivo) */
 .prev, .next {
     position: absolute;
     top: 50%;
@@ -232,6 +240,13 @@ body {
 
 .next {
     right: 10px;
+}
+
+/* Media Query per dispositivi mobili */
+@media (max-width: 768px) {
+    .portfolio-img {
+        max-height: 300px; /* Ridotto per dispositivi mobili */
+    }
 }
 
 /* Sezione Contatti */

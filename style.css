@@ -72,7 +72,7 @@ body {
 /* Header di presentazione */
 .hero {
     height: 600px;
-    background-image: url('path/to/your-background.jpg'); /* Assicurati che il percorso sia corretto */
+    background-image: url('imagine/sfondo.png'); /* Assicurati che il percorso sia corretto */
     background-size: cover;
     background-position: center;
     display: flex;

@@ -423,10 +423,18 @@ footer {
 
     .burger-menu {
         display: flex;
+        flex-direction: row; /* Posiziona le barre orizzontalmente */
+        align-items: center; /* Allinea verticalmente le barre */
+        gap: 8px; /* Spazio tra le barre, se necessario */
+        cursor: pointer;
     }
 
     .burger-menu .bar {
+        width: 30px; /* Aumenta la larghezza delle barre */
+        height: 3px; /* Altezza delle barre */
         background-color: #fff; /* Colore delle barre del menu hamburger */
+        transition: 0.3s; /* Transizione per l’animazione */
+        border-radius: 5px; /* Arrotonda gli angoli delle barre */
     }
 
     .burger-menu.toggle .bar:nth-child(2) {
@@ -434,11 +442,10 @@ footer {
     }
 
     .burger-menu.toggle .bar:nth-child(1) {
-        transform: rotate(45deg) translate(5px, 6px);
+        transform: rotate(45deg) translate(4px, 4px);
     }
 
     .burger-menu.toggle .bar:nth-child(3) {
-        transform: rotate(-45deg) translate(6px, -6px);
+        transform: rotate(-45deg) translate(4px, -4px);
     }
 }
-

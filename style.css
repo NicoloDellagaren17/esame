@@ -82,7 +82,7 @@ body {
 
 /* Header di presentazione */
 .hero {
-    height: 800px;
+    height: 650px;
     background-image: url('imagine/sfondo.png'); /* Assicurati che il percorso sia corretto */
     background-size: cover;
     background-position: center;
@@ -106,8 +106,8 @@ body {
     display: inline-block;
     margin-top: 20px;
     padding: 10px 20px;
-    background-color: #fff;
-    color: #000;
+    background-color: #000;
+    color: #fff;
     border: none;
     border-radius: 5px;
     text-decoration: none;
@@ -117,13 +117,13 @@ body {
 }
 
 .hero-button:hover {
-    background-color: #000;
-    color: #fff;
+    background-color: #fff;
+    color: #000;
 }
 
 /* Sezione Chi Sono */
 .about {
-    padding: 40px 20px; /* Aggiungi più padding per maggiore spazio interno */
+    padding: 20px 20px; /* Aggiungi più padding per maggiore spazio interno */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -426,7 +426,7 @@ footer {
     }
 
     .burger-menu .bar {
-        background-color: #000; /* Colore delle barre del menu hamburger */
+        background-color: #fff; /* Colore delle barre del menu hamburger */
     }
 
     .burger-menu.toggle .bar:nth-child(2) {

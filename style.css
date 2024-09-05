@@ -73,7 +73,7 @@ body {
 
 /* Header di presentazione */
 .hero {
-    height: 600px;
+    height: 800px;
     background-image: url('imagine/sfondo.png'); /* Assicurati che il percorso sia corretto */
     background-size: cover;
     background-position: center;
@@ -146,7 +146,7 @@ body {
     opacity: 0;
     transform: translateY(50px);
     transition: opacity 0.6s ease-in-out, transform 0.6s ease-in-out;
-    margin-bottom: 80px; /* Spazio tra Servizi e la sezione successiva */
+    margin-bottom: 150px; /* Spazio tra Servizi e la sezione successiva */
 }
 
 .services.visible {
@@ -185,7 +185,7 @@ body {
     opacity: 0;
     transform: translateY(50px);
     transition: opacity 0.6s ease-in-out, transform 0.6s ease-in-out;
-    margin-bottom: 80px; /* Spazio tra Servizi e la sezione successiva */
+    margin-bottom: 150px; /* Spazio tra Servizi e la sezione successiva */
     background-image: url('imagine/sfondo.png'); /* Cambia con il percorso corretto dell'immagine */
     background-size: cover; /* Adatta l'immagine a coprire l'intera area */
     background-position: center; /* Centra l'immagine */

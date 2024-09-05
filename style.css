@@ -254,6 +254,15 @@ body {
         flex-direction: column; /* In dispositivi mobili, foto e testo saranno in colonna */
         text-align: center; /* Allinea il testo al centro */
     }
+    /* Media Query per dispositivi mobili */
+@media (max-width: 768px) {
+    .about-photo {
+        width: 100%; /* Imposta la larghezza al 100% del contenitore */
+        height: auto; /* Mantiene le proporzioni originali dell'immagine */
+        object-fit: cover; /* Ritaglia e adatta l'immagine per riempire il contenitore senza deformazioni */
+    }
+}
+
 
     .about-photo {
         width: 80%; /* Ridotto per dispositivi mobili */

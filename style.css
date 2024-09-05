@@ -424,7 +424,7 @@ footer {
         display: flex;
         flex-direction: column; /* Posiziona le barre verticalmente */
         align-items: center; /* Allinea le barre orizzontalmente */
-        gap: 1px; /* Spazio tra le barre, se necessario */
+        gap: 2px; /* Spazio tra le barre, se necessario */
         cursor: pointer;
     }
     
@@ -435,7 +435,7 @@ footer {
         background-color: #fff; /* Colore delle barre del menu hamburger */
         transition: 0.3s; /* Transizione per l’animazione */
         border-radius: 5px; /* Arrotonda gli angoli delle barre */
-        gap: 2px; /* Spazio tra le barre, se necessario */
+     +
     }
 
     .burger-menu.toggle .bar:nth-child(1) {

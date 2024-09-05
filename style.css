@@ -1,4 +1,4 @@
-* Font e Colori */
+/* Font e Colori */
 body {
     font-family: 'Apotek', sans-serif;
     margin: 0;
@@ -426,7 +426,7 @@ footer {
     }
 
     .burger-menu .bar {
-        background-color: #fff; /* Colore delle barre del menu hamburger */
+        background-color: #000; /* Colore delle barre del menu hamburger */
     }
 
     .burger-menu.toggle .bar:nth-child(2) {

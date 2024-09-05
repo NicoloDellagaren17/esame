@@ -62,20 +62,41 @@ body {
 }
 
 
+/* Menu hamburger */
 .burger-menu {
-    display: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra verticalmente le barre */
+    align-items: center;
     cursor: pointer;
-    background-color: #000; /* Colore del menu hamburger */
+    background-color: transparent; /* Sfondo trasparente per il burger menu */
+    border: none;
+    padding: 10px; /* Padding per un'area cliccabile più ampia */
+    position: relative; /* Posiziona relativamente il menu */
+    z-index: 1001; /* Assicurati che il menu sia sopra gli altri elementi */
 }
 
 .burger-menu .bar {
-    width: 25px;
-    height: 3px;
-    background-color: #fff; /* Colore delle barre del menu hamburger */
-    margin: 5px; /* Spazio tra le barre */
-    transition: 0.3s; /* Transizione per l’animazione */
+    width: 30px; /* Larghezza delle barre */
+    height: 3px; /* Altezza delle barre */
+    background-color: #fff; /* Colore delle barre */
+    margin: 5px 0; /* Spazio tra le barre */
+    transition: all 0.3s ease; /* Transizione per le animazioni */
     border-radius: 5px; /* Arrotonda gli angoli delle barre */
-    transition: 0.3s;
+}
+
+/* Stato attivo (menu aperto) */
+.burger-menu.toggle .bar:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px); /* Ruota la prima barra per formare una X */
+}
+
+.burger-menu.toggle .bar:nth-child(2) {
+    opacity: 0; /* Nasconde la barra centrale */
+}
+
+.burger-menu.toggle .bar:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px); /* Ruota la terza barra per formare una X */
+}
 }
 
 /* Header di presentazione */

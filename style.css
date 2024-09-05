@@ -65,13 +65,13 @@ body {
 .burger-menu {
     display: none;
     cursor: pointer;
-    background-color: #fff; /* Colore del menu hamburger */
+    background-color: #000; /* Colore del menu hamburger */
 }
 
 .burger-menu .bar {
-    width: 3px;
-    height: 25px;
-    background-color: #000; /* Colore delle barre del menu hamburger */
+    width: 25px;
+    height: 3px;
+    background-color: #fff; /* Colore delle barre del menu hamburger */
     margin: 5px; /* Spazio tra le barre */
     transition: 0.3s; /* Transizione per l’animazione */
     border-radius: 5px; /* Arrotonda gli angoli delle barre */
@@ -197,6 +197,7 @@ body {
     background-size: cover; /* Adatta l'immagine a coprire l'intera area */
     background-position: center; /* Centra l'immagine */
     background-repeat: no-repeat; /* Evita di ripetere l'immagine */
+    background-attachment: fixed; /* Parallax effect */
 }
 
 

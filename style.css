@@ -62,10 +62,12 @@ body {
 }
 
 .burger-menu .bar {
-    width: 25px;
-    height: 3px;
+    width: 3px;
+    height: 25px;
     background-color: #000; /* Colore delle barre del menu hamburger */
-    margin: 5px;
+    margin: 5px; /* Spazio tra le barre */
+    transition: 0.3s; /* Transizione per l’animazione */
+    border-radius: 5px; /* Arrotonda gli angoli delle barre */
     transition: 0.3s;
 }
 

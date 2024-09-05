@@ -426,7 +426,7 @@ footer {
     }
 
     .burger-menu .bar {
-        background-color: #000; /* Colore delle barre del menu hamburger */
+        background-color: #fff; /* Colore delle barre del menu hamburger */
     }
 
     .burger-menu.toggle .bar:nth-child(2) {

@@ -438,11 +438,13 @@ footer {
     }
 
     .burger-menu.toggle .bar:nth-child(2) {
-        opacity: 0;
+        transform: rotate(45deg) translate(4px, 4px);
     }
 
+
     .burger-menu.toggle .bar:nth-child(1) {
-        transform: rotate(45deg) translate(4px, 4px);
+        opacity: 0;
+    }
     }
 
     .burger-menu.toggle .bar:nth-child(3) {

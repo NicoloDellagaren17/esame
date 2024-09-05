@@ -22,23 +22,6 @@ body {
     z-index: 1000;
     transition: background-color 0.3s;
 }
-/* Ridurre il padding tra i link */
-.navbar ul li {
-    display: inline-block;
-    padding: 0 10px; /* Ridotto per ottenere più spazio */
-}
-
-/* Ridurre la dimensione del font */
-.navbar ul li a {
-    font-size: 16px; /* Ridotto per guadagnare spazio */
-    color: #fff;
-}
-
-/* Evita il taglio delle parole */
-.navbar ul li a {
-    white-space: nowrap; /* Impedisce che il testo venga tagliato */
-}
-
 
 .navbar.scrolled {
     background-color: #222;

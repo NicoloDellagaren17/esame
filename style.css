@@ -1,4 +1,4 @@
-/* Font e Colori */
+* Font e Colori */
 body {
     font-family: 'Apotek', sans-serif;
     margin: 0;
@@ -61,6 +61,7 @@ body {
     color: #ddd;
 }
 
+
 /* Menu hamburger */
 .burger-menu {
     display: none;
@@ -75,7 +76,9 @@ body {
     margin: 5px; /* Spazio tra le barre */
     transition: 0.3s; /* Transizione per l’animazione */
     border-radius: 5px; /* Arrotonda gli angoli delle barre */
+    transition: 0.3s;
 }
+
 
 /* Header di presentazione */
 .hero {
@@ -153,11 +156,11 @@ body {
     transform: translateY(50px);
     transition: opacity 0.6s ease-in-out, transform 0.6s ease-in-out;
     margin-bottom: 150px; /* Spazio tra Servizi e la sezione successiva */
-    background-image: url('imagine/sfondo.png'); /* Cambia con il percorso corretto dell'immagine */
-    background-size: cover; /* Adatta l'immagine a coprire l'intera area */
-    background-position: center; /* Centra l'immagine */
-    background-repeat: no-repeat; /* Evita di ripetere l'immagine */
-    background-attachment: fixed; /* Parallax effect */
+}
+
+.services.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .service-container {
@@ -186,6 +189,21 @@ body {
     max-width: 160px; /* Limita la larghezza massima */
     margin-bottom: 10px;
 }
+.services {
+    padding: 40px 20px; /* Aggiungi più padding per maggiore spazio interno */
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease-in-out, transform 0.6s ease-in-out;
+    margin-bottom: 150px; /* Spazio tra Servizi e la sezione successiva */
+    background-image: url('imagine/sfondo.png'); /* Cambia con il percorso corretto dell'immagine */
+    background-size: cover; /* Adatta l'immagine a coprire l'intera area */
+    background-position: center; /* Centra l'immagine */
+    background-repeat: no-repeat; /* Evita di ripetere l'immagine */
+    background-attachment: fixed; /* Parallax effect */
+}
+
+
+
 
 /* Sezione Portfolio */
 .portfolio {
@@ -256,47 +274,31 @@ body {
     .portfolio-img {
         max-height: 300px; /* Ridotto per dispositivi mobili */
     }
-
+}
+/* Media Query per dispositivi mobili */
+@media (max-width: 768px) {
     .about {
         flex-direction: column; /* In dispositivi mobili, foto e testo saranno in colonna */
         text-align: center; /* Allinea il testo al centro */
     }
-
+    /* Media Query per dispositivi mobili */
+@media (max-width: 768px) {
     .about-photo {
         width: 100%; /* Imposta la larghezza al 100% del contenitore */
         height: auto; /* Mantiene le proporzioni originali dell'immagine */
         object-fit: cover; /* Ritaglia e adatta l'immagine per riempire il contenitore senza deformazioni */
+    }
+}
+
+
+    .about-photo {
+        width: 80%; /* Ridotto per dispositivi mobili */
         margin-right: 0; /* Rimuovi il margine destro quando la foto è sotto il testo */
         margin-bottom: 20px; /* Aggiungi uno spazio tra la foto e il testo */
     }
 
     .about-text {
         width: 100%; /* Assicurati che il testo occupi tutta la larghezza disponibile */
-    }
-
-    .nav-links {
-        display: none;
-        flex-direction: column;
-    }
-
-    .nav-links.active {
-        display: flex;
-    }
-
-    .burger-menu {
-        display: flex;
-    }
-
-    .burger-menu .bar:nth-child(2) {
-        opacity: 0;
-    }
-
-    .burger-menu .bar:nth-child(1) {
-        transform: rotate(45deg) translate(5px, 6px);
-    }
-
-    .burger-menu .bar:nth-child(3) {
-        transform: rotate(-45deg) translate(6px, -6px);
     }
 }
 
@@ -406,5 +408,37 @@ footer {
 
 .close:hover {
     color: #ddd;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .burger-menu {
+        display: flex;
+    }
+
+    .burger-menu .bar {
+        background-color: #000; /* Colore delle barre del menu hamburger */
+    }
+
+    .burger-menu.toggle .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .burger-menu.toggle .bar:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 6px);
+    }
+
+    .burger-menu.toggle .bar:nth-child(3) {
+        transform: rotate(-45deg) translate(6px, -6px);
+    }
 }
 

@@ -175,7 +175,9 @@ body {
 .service-icon {
     width: 160px;
     height: 90px;
+    object-fit: cover; /* Adatta l'immagine riempiendo il contenitore */
     margin-bottom: 10px;
+}
 }
 
 /* Sezione Portfolio */

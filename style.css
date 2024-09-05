@@ -248,6 +248,23 @@ body {
         max-height: 300px; /* Ridotto per dispositivi mobili */
     }
 }
+/* Media Query per dispositivi mobili */
+@media (max-width: 768px) {
+    .about {
+        flex-direction: column; /* In dispositivi mobili, foto e testo saranno in colonna */
+        text-align: center; /* Allinea il testo al centro */
+    }
+
+    .about-photo {
+        width: 80%; /* Ridotto per dispositivi mobili */
+        margin-right: 0; /* Rimuovi il margine destro quando la foto è sotto il testo */
+        margin-bottom: 20px; /* Aggiungi uno spazio tra la foto e il testo */
+    }
+
+    .about-text {
+        width: 100%; /* Assicurati che il testo occupi tutta la larghezza disponibile */
+    }
+}
 
 /* Sezione Contatti */
 .contact {

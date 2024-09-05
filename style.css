@@ -58,7 +58,7 @@ body {
 }
 
 .nav-links a:hover {
-    color: #ddd;
+    color: FFFF00;
 }
 
 
@@ -437,17 +437,16 @@ footer {
         border-radius: 5px; /* Arrotonda gli angoli delle barre */
     }
 
-    .burger-menu.toggle .bar:nth-child(2) {
-        transform: rotate(45deg) translate(4px, 4px);
-    }
-
-
     .burger-menu.toggle .bar:nth-child(1) {
-        opacity: 0;
-    }
-    }
+    transform: rotate(45deg) translate(5px, 5px); /* Ruota la prima barra e la sposta */
+    opacity: 1; /* Assicurati che sia visibile */
+}
 
-    .burger-menu.toggle .bar:nth-child(3) {
-        transform: rotate(-45deg) translate(4px, -4px);
-    }
+.burger-menu.toggle .bar:nth-child(2) {
+    opacity: 0; /* Nasconde la seconda barra */
+}
+
+.burger-menu.toggle .bar:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px); /* Ruota la terza barra e la sposta */
+    opacity: 1; /* Assicurati che sia visibile */
 }

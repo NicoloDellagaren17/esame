@@ -424,7 +424,7 @@ footer {
         display: flex;
         flex-direction: column; /* Posiziona le barre verticalmente */
         align-items: center; /* Allinea le barre orizzontalmente */
-        gap: 8px; /* Spazio tra le barre, se necessario */
+        gap: 3px; /* Spazio tra le barre, se necessario */
         cursor: pointer;
     }
     

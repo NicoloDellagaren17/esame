@@ -14,13 +14,15 @@ body {
     justify-content: space-between;
     align-items: center;
     background-color: #000;
-    padding: 10px;
+    padding: 10px 20px; /* Aggiungi padding orizzontale per spazio ai lati */
     color: #fff;
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 1000;
     transition: background-color 0.3s;
+    box-sizing: border-box; /* Include il padding nelle dimensioni totali */
+    overflow: hidden; /* Evita che il contenuto esca dai limiti */
 }
 
 .navbar.scrolled {
@@ -39,6 +41,8 @@ body {
 .nav-links {
     list-style: none;
     display: flex;
+    margin: 0;
+    padding: 0; /* Rimuovi il padding per evitare problemi di spazio */
 }
 
 .nav-links li {
@@ -49,11 +53,14 @@ body {
     color: #fff;
     text-decoration: none;
     transition: color 0.3s;
+    padding: 5px; /* Aggiungi padding per migliorare la leggibilità */
+    white-space: nowrap; /* Evita che il testo si spezzi su più righe */
 }
 
 .nav-links a:hover {
     color: #ddd;
 }
+
 
 .burger-menu {
     display: none;

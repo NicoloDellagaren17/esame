@@ -420,14 +420,14 @@ footer {
     .nav-links.active {
         display: flex;
     }
-
-    .burger-menu {
+   .burger-menu {
         display: flex;
-        flex-direction: row; /* Posiziona le barre orizzontalmente */
-        align-items: center; /* Allinea verticalmente le barre */
+        flex-direction: column; /* Posiziona le barre verticalmente */
+        align-items: center; /* Allinea le barre orizzontalmente */
         gap: 8px; /* Spazio tra le barre, se necessario */
         cursor: pointer;
     }
+    
 
     .burger-menu .bar {
         width: 30px; /* Aumenta la larghezza delle barre */

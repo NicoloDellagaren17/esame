@@ -173,12 +173,13 @@ body {
 }
 
 .service-icon {
-    width: 160px;
-    height: 90px;
-    object-fit: cover; /* Adatta l'immagine riempiendo il contenitore */
+    width: 100%; /* L'immagine si adatta al 100% della larghezza del contenitore */
+    height: auto; /* Mantiene il rapporto d'aspetto */
+    max-width: 160px; /* Limita la larghezza massima */
     margin-bottom: 10px;
 }
-}
+
+
 
 /* Sezione Portfolio */
 .portfolio {

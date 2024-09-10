@@ -50,7 +50,7 @@ body {
 }
 
 .nav-links a {
-    color: #ff0000;
+    color: #fff;
     text-decoration: none;
     transition: color 0.3s;
     padding: 5px; /* Aggiungi padding per migliorare la leggibilità */
@@ -58,7 +58,7 @@ body {
 }
 
 .nav-links a:hover {
-    color: #fff;
+    color: #ff0000;
 }
 
 
@@ -89,7 +89,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #fff;
+    color: #000;
     text-align: center;
     position: relative;
     background-attachment: fixed; /* Parallax effect */

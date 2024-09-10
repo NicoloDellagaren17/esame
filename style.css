@@ -448,6 +448,6 @@ footer {
 }
 
 .burger-menu.toggle .bar:nth-child(3) {
-    transform: rotate(-45deg) translate(5px, 16px); /* Ruota la terza barra e la sposta */
+    transform: rotate(-45deg) translate(5px, -16px); /* Ruota la terza barra e la sposta */
     opacity: 1; /* Assicurati che sia visibile */
 }

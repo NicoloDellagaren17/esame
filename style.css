@@ -58,7 +58,7 @@ body {
 }
 
 .nav-links a:hover {
-    color: FFFF00;
+    color: #FF0000;
 }
 
 
@@ -106,7 +106,7 @@ body {
     display: inline-block;
     margin-top: 20px;
     padding: 10px 20px;
-    background-color: #000;
+    background-color: #ff00000;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -117,8 +117,8 @@ body {
 }
 
 .hero-button:hover {
-    background-color: #fff;
-    color: #000;
+    background-color: #f000;
+    color: #ff0000;
 }
 
 /* Sezione Chi Sono */

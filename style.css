@@ -50,7 +50,7 @@ body {
 }
 
 .nav-links a {
-    color: #fff;
+    color: #ff0000;
     text-decoration: none;
     transition: color 0.3s;
     padding: 5px; /* Aggiungi padding per migliorare la leggibilità */
@@ -58,7 +58,7 @@ body {
 }
 
 .nav-links a:hover {
-    color: #FF0000;
+    color: #fff;
 }
 
 

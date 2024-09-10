@@ -95,6 +95,17 @@ body {
     background-attachment: fixed; /* Parallax effect */
     margin-bottom: 80px; /* Spazio tra l'header e la sezione successiva */
 }
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5); /* Sovrapposizione bianca semitrasparente */
+    z-index: 1; /* Assicurati che l'overlay sia sopra l'immagine di sfondo */
+}
+
 
 .hero-text {
     background: rgba(0, 0, 0, 0.5);

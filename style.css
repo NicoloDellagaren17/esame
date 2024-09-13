@@ -343,16 +343,16 @@ form textarea {
 form button {
     margin-top: 10px;
     padding: 10px;
-    background-color: #ff0000;
-    color: #fff;
+    background-color: #000;
+    color: #ff0000;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
 }
 form button:hover {
-    background-color: #fff; /* Colore di sfondo al passaggio del mouse */
-    color: #ff0000; /* Colore del testo al passaggio del mouse */
+    background-color: #ff0000; /* Colore di sfondo al passaggio del mouse */
+    color: #fff; /* Colore del testo al passaggio del mouse */
 }
 
 /* Footer */
@@ -377,7 +377,7 @@ footer {
 }
 
 .social-icons a:hover {
-    color: #ddd;
+    color: #ff0000;
 }
 
 /* Modale */

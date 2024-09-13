@@ -13,7 +13,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #000;
+    background-color: #ff0000;
     padding: 10px 20px; /* Aggiungi padding orizzontale per spazio ai lati */
     color: #fff;
     position: fixed;
@@ -26,7 +26,7 @@ body {
 }
 
 .navbar.scrolled {
-    background-color: #222;
+    background-color: #000;
 }
 
 .logo {
@@ -58,7 +58,7 @@ body {
 }
 
 .nav-links a:hover {
-    color: #ff0000;
+    color: #000;
 }
 
 

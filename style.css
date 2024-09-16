@@ -83,7 +83,7 @@ body {
 /* Header di presentazione */
 .hero {
     height: 650px;
-    background-image: url('imagine/sfondo.png'); /* Assicurati che il percorso sia corretto */
+    background-image: url('imagine/sfondofirma.png'); /* Assicurati che il percorso sia corretto */
     background-size: cover;
     background-position: center;
     display: flex;
